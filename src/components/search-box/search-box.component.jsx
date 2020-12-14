@@ -1,9 +1,8 @@
 import './search-box.styles.css';
+import { Input } from 'antd';
+import { AudioOutlined } from '@ant-design/icons';
+const { Search } = Input;
 
 export const SearchBox = ({placeholder, handleChange}) => (
-	<input 
-		className='search'
-		type="text" 
-		onChange={handleChange} 
-		placeholder={placeholder} />
+  <Search placeholder={placeholder} onChange={handleChange} style={{ width: 200, paddingBottom:15}} />
 );
